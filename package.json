@@ -1,0 +1,41 @@
+{
+	"name": "@kokiito0926/oneshot",
+	"version": "0.0.0",
+	"private": false,
+	"description": "パイプから流し込まれたHTMLをブラウザで表示できるコマンドラインのツールです。",
+	"keywords": [
+		"cli",
+		"bash",
+		"shell",
+		"script",
+		"nodejs",
+		"stdin",
+		"oneshot"
+	],
+	"homepage": "https://github.com/kokiito0926/oneshot#readme",
+	"publishConfig": {
+		"access": "public"
+	},
+	"bin": {
+		"oneshot": "index.js"
+	},
+	"bugs": {
+		"url": "https://github.com/kokiito0926/oneshot/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kokiito0926/oneshot.git"
+	},
+	"license": "MIT",
+	"author": "Koki Ito <kokiito0926@gmail.com>",
+	"type": "module",
+	"scripts": {
+		"test": "node --test"
+	},
+	"dependencies": {
+		"zx": "^8.8.4"
+	},
+	"engines": {
+		"node": ">=24.0.0"
+	}
+}
