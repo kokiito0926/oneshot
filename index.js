@@ -21,13 +21,13 @@ const server = app.listen(3000, async () => {
 	const url = `http://localhost:${port}`;
 
 	app.get("/", (req, res) => {
-		res.send(html);
-
-		setTimeout(() => {
+		res.on("finish", () => {
 			server.close(() => {
 				process.exit(0);
 			});
-		}, 300);
+		});
+
+		res.send(html);
 	});
 
 	await open(url);
