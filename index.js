@@ -3,7 +3,7 @@
 // >> $ curl -sSL https://example.com/ | ./index.js
 
 import open from "open";
-import { stdin } from "zx";
+import { stdin, argv } from "zx";
 import express from "express";
 
 if (process.stdin.isTTY) {
@@ -15,9 +15,10 @@ if (!html) {
 	process.exit(1);
 }
 
+const port = argv.port || 3000;
+
 const app = express();
-const server = app.listen(3000, async () => {
-	const port = server.address().port;
+const server = app.listen(port, async () => {
 	const url = `http://localhost:${port}`;
 
 	app.get("/", (req, res) => {
