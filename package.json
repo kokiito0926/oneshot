@@ -1,6 +1,6 @@
 {
 	"name": "@kokiito0926/oneshot",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"private": false,
 	"description": "パイプから流し込まれたHTMLをブラウザで表示できるコマンドラインのツールです。",
 	"keywords": [
