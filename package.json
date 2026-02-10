@@ -2,7 +2,7 @@
 	"name": "@kokiito0926/oneshot",
 	"version": "0.0.1",
 	"private": false,
-	"description": "パイプから流し込まれたHTMLをブラウザで表示できるコマンドラインのツールです。",
+	"description": "標準入力から流し込まれたHTMLをブラウザで表示できるコマンドラインのツールです。",
 	"keywords": [
 		"cli",
 		"bash",
