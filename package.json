@@ -1,6 +1,6 @@
 {
 	"name": "@kokiito0926/oneshot",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"private": false,
 	"description": "標準入力から流し込まれたHTMLをブラウザで表示できるコマンドラインのツールです。",
 	"keywords": [
